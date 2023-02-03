@@ -1,13 +1,13 @@
 {% set name = "napari-tissuumaps" %}
-{% set version = "0.2.0" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-tissuumaps-{{ version }}.tar.gz
-  sha256: a37b8fe213b698cb47ebd9187189263cc4ec436a9bb492e19b161acd37bc5c37
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: b53e77e272b81115d311292d7b3c3e4a95a09e1a1313f4cb08dc9e9212833523
 
 build:
   noarch: python
